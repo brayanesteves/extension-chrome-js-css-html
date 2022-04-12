@@ -1,7 +1,4 @@
-//const amountController = document.querySelector("#mainArea").querySelector('.responsive-area').querySelector("#ratesChartsContainer > div.charttab-div > div");
-const amountController = document.querySelector(".trading-module-container");
-
-const fechaComoCadena = new Date(); // día lunes
+const fechaComoCadena = new Date();
 const dias = [
   'domingo',
   'lunes',
@@ -14,7 +11,6 @@ const dias = [
 const numeroDia = new Date(fechaComoCadena).getDay();
 const nombreDia = dias[numeroDia];
 if (nombreDia == "lunes") {
-    amountController.style.display = "none";
-    console.log(amountController);
+    alert(nombreDia);
 }
 console.log("Nombre de día de la semana: ", nombreDia);
